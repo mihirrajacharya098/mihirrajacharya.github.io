@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Cursor glow */
+.cursor-glow {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+  z-index: 999;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.tagline {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 32px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+/* Sections */
+.section {
+  padding: 80px 12%;
+}
+
+.section.dark {
+  background: #111;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text {
+  max-width: 700px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+  background: #0b0b0b;
+  border: 1px solid #222;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: white;
+}
+
+/* Achievements */
+.achievements li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* Reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
